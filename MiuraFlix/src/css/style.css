@@ -1,0 +1,44 @@
+body, header, nav, article, section, img, a{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+  } 
+  
+  body{
+    background-color: rgb(14,14,14)
+  }
+    
+  header{
+    background-color: rgb(20,20,20);
+    }
+  
+  /*Classes*/
+  .articleNav{
+    display:flex;
+    justify-content:space-between;
+  }
+  .sectionOne{
+    padding: 20px 50px;
+  }
+  
+  .sectionTwo{
+    padding:20px;
+    margin-right:20px;
+  }
+  
+  /*Titulo Principal*/
+  .container{
+    position:relative;
+    width:100%;
+    max-width:2000px;
+  }
+  .container img{
+    width:100%;
+    height:auto;
+  }
+  
