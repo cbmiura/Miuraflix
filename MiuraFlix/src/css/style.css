@@ -1,4 +1,4 @@
-body, header, nav, article, section, img, a{
+body, header, nav, article, section, img, a, div, footer, ul, li, button, p, h1, h2, h3, h4, h5, h6, pre{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@ body, header, nav, article, section, img, a{
   
   h1 {
     margin: 0px;
-    padding: 0px
+    padding: 0px;
   }
 
   h1 img{
@@ -29,6 +29,7 @@ body, header, nav, article, section, img, a{
     top: 145px;
     left: 70px;
   }
+
   /*Classes*/
   .articleNav{
     display:flex;
@@ -52,8 +53,9 @@ body, header, nav, article, section, img, a{
   }
 
   .sectionTwo{
-    padding:20px;
+    padding:9px;
     margin-right:20px;
+    word-spacing:25px;
   }
   
   /*Titulo Principal*/
@@ -62,7 +64,8 @@ body, header, nav, article, section, img, a{
     width:100%;
     max-width:2000px;
   }
-  .container img{
+
+  .imgPrincipal{
     width:100%;
     height: 500px;
   }
@@ -80,32 +83,123 @@ body, header, nav, article, section, img, a{
   
   .btnWatch{
     position: absolute;
-    bottom: 120px;
+    bottom: 100px;
     left: 70px;
     background-color: white;
     color: black;
-    padding: 15px 50px;
+    padding: 15px 35px 15px 60px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  .playBtn{
+    border-style: solid;
+    border-width: 8px 0px 8px 16px;
+    border-color: transparent transparent transparent #202020;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 117px;
+    left: 90px;
+}
+
+  .btnInfo{
+    position: absolute;
+    bottom: 100px;
+    left: 255px;
+    background-color: rgba(109, 109, 110, 0.4);
+    color: white;
+    padding: 15px 20px 15px 60px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+  .btnInfo:hover{
+    background-color:rgba(54, 54, 54, 0.438);
   }
 
-  .btnInfo{
+  .info{
+    width: 22px;
+    height: 22px;
     position: absolute;
-    bottom:120px;
-    left:255px;
-    background-color:grey;
-    color:black;
-    padding: 15px 50px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius:5px;
-    text-align:center;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    bottom: 114px;
+    left: 275px;
   }
+
+  .title{
+    margin-left:45px;
+  }
+  /*END*/
+
+
+  /*CONTINUAR ASSISTINDO*/
+  .continuarAssitindo{
+    display:inline-flex;
+  }
+  
+ .titleCont{
+    margin-left: 45px;
+    margin-top: 0px;
+  }
+
+  .continuarAssistindo img{
+    height: 130px;
+    width: 230px;
+  }
+
+  .firstRow{
+    margin-left:45px;
+  }
+/*END*/
+
+
+/*SÓ NA NETFLIX*/
+  .soNetflix img{
+    height: 435px;
+    width: 230px;
+  }
+/*END*/
+
+/*FOOTER*/
+.socialMedia{
+  display: inline-flex;
+  margin: 20px 1200px 20px 100px;
+}
+
+.socialMedia li{
+  padding: 0px 20px 0px 0px;
+}
+
+.footInfo{
+  display: inline-block;
+  margin: 0px 10px 0px 100px;
+  white-space: pre-line;
+  vertical-align: top;
+}
+
+.footInfo a{
+  color: grey;
+}
+
+.codigo{
+  border:1px solid grey;;
+  max-width: fit-content;
+  padding: 10px;
+  font-size: 15px;
+  margin-left: 100px;
+  margin-bottom:25px;
+  color:grey;
+}
+
+.inc{
+  color: grey;
+  font-size: smaller;
+  padding: 0px 0px 10px 100px;
+}
